@@ -28,7 +28,7 @@ let marker = new mapboxgl.Marker()
     .setDraggable(true);
 
 function onDragEnd() {
-    var lngLat = marker.getLngLat();
+    let lngLat = marker.getLngLat();
     fiveDayForecast(marker.getLngLat());
     console.log(marker.getLngLat());
 }
@@ -62,12 +62,12 @@ function buildWeather(cards) {
     let postHTML = ``;
 
     cards.daily.forEach(function (card) {
-        var newDate = new Date();
+        let newDate = new Date();
 
         postHTML += `     
-                    <div class="container-fluid mt-3 mb-3" id="weather-cards">
-                        <div class="row justify-content-center row-cols-sm-2 row-cols-md-5 row-cols-lg-5 row-cols-xl-5">
-                            <div class="col-mt-5">
+                    <div class="container d-flex justify-content-center m-1" id="weather-cards">
+                        <div class="row-sm justify-content-center row-cols-sm-2 row-cols-md-5 row-cols-lg-5 row-cols-xl-5">
+                            <div class="col-sm" id="card-col">
                                 <div class="card text-center card-weather">
                                     <div class="card-header">${newDate.toLocaleString()}</div>
                                     <div class="card-body">
