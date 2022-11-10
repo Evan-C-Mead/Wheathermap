@@ -24,7 +24,7 @@
         }
 
         #weather-cards {
-
+            width: 50%;
         }
 
         #card-col {
@@ -47,11 +47,12 @@
         <form class="form-inline" id="search">
             <input class="form-control form-control-sm text-center p-1" id="nav-search" type="search"
                    placeholder="   Search City Name/Zip" aria-label="Search">
-            <button class="btn btn-success btn-sm p-1" id="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass-location"></i></button>
+            <button class="btn btn-success btn-sm p-1" id="search-btn" type="submit"><i
+                    class="fa-solid fa-magnifying-glass-location"></i></button>
         </form>
     </nav>
 
-    <div id="weather-cards"></div>
+    <div class="container d-flex justify-content-center m-0 p-0" id="weather-cards"></div>
 
     <div class="card col d-flex align-content-center p-0" id="map-card">
         <div class="card-body" id="map">
@@ -59,7 +60,6 @@
         </div>
     </div>
 </div>
-
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

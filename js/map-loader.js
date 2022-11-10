@@ -65,10 +65,9 @@ function buildWeather(cards) {
         let newDate = new Date();
 
         postHTML += `     
-                    <div class="container d-flex justify-content-center m-1" id="weather-cards">
-                        <div class="row-sm justify-content-center row-cols-sm-2 row-cols-md-5 row-cols-lg-5 row-cols-xl-5">
-                            <div class="col-sm" id="card-col">
-                                <div class="card text-center card-weather">
+                        <div class="row-sm justify-content-center">
+                            <div class="col-sm p-1" id="card-col">
+                                <div class="card text-center">
                                     <div class="card-header">${newDate.toLocaleString()}</div>
                                     <div class="card-body">
                                         <h5 class="card-title">Day: ${card.temp.day}&#176; F</h5>
@@ -78,7 +77,6 @@ function buildWeather(cards) {
                                 </div>
                             </div>
                         </div>
-                    </div>
                     `
     });
     $('#weather-cards').html(postHTML);
